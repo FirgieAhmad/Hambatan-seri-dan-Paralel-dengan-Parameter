@@ -1,0 +1,27 @@
+#include <iostream>
+//Nama : Firgie Ahmad -- NIM : ETE10190123
+using namespace std;
+
+int hambatanSeri (int f, int g, int h){return f + g + h;}
+	float hambatanParalel (float i, float j, float k){
+int x = i * j * k; float satu, dua, tiga, done, hasil;
+	satu = (x / i) * 1;dua  = (x / j) * 1; tiga = (x / k) * 1; hasil = (satu + dua + tiga); done = hasil / x;
+		cout << "\n\nparalel >> "; cout << hasil << "/" << x;
+	
+	return done;}
+	
+int main(){
+    float r1, r2, r3, s, p;
+ 
+    cout << "Masukkan R1 : "; cin >> r1;
+    cout << "Masukkan R2 : "; cin >> r2;
+    cout << "Masukkan R3 : "; cin >> r3;
+
+    s = r1 + r2 + r3;
+    p = 1 / ((1/r1) + (1/r2) + (1/r3));
+ 
+    cout << "Hambatan Seri    = " << s << endl;
+    cout << "Hambatan Paralel = " << p << endl;
+
+    return 0;
+}
